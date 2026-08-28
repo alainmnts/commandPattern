@@ -21,8 +21,4 @@ public class Light {
         this.brightness = level;
         System.out.println("Light brightness set to " + brightness + "%.");
     }
-
-    public int getBrightness() {
-        return brightness;
-    }
 }
