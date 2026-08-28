@@ -1,0 +1,18 @@
+package invokers;
+
+import commands.Command;
+
+public class RemoteControl {
+    private Command command;
+
+    public void setCommand(Command command) {
+        this.command = command;
+    }
+
+    public void pressButton() {
+        if (command == null) {
+            System.out.println("No command set for this button.");
+        }
+        command.execute();
+    }
+}
